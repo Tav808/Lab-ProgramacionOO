@@ -13,7 +13,7 @@ public class App {
         System.out.println(curso1.cantidadAlumnos());
         curso1.listarAlumnos();
 
-        curso1.darDeBaja(estudiante2);
+        curso1.darDeBaja(1);
         curso1.listarAlumnos();
     }
 }
