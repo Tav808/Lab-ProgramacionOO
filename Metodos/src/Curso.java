@@ -17,8 +17,8 @@ public class Curso {
         alumnos.add(e);
     }
 
-    public void darDeBaja(Estudiante e) {
-        alumnos.remove(e);
+    public void darDeBaja(int index) {
+        alumnos.remove(index);
     }
 
     public void listarAlumnos() {
