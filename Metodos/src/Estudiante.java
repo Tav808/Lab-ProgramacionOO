@@ -1,9 +1,9 @@
 public class Estudiante {
     private String nombre;
-    private int dni;
+    private String dni;
     private double promedio;
 
-    public Estudiante(String nombre, int dni, double promedio) {
+    public Estudiante(String nombre, String dni, double promedio) {
         this.nombre = nombre;
         this.dni = dni;
         this.promedio = promedio;
@@ -17,7 +17,7 @@ public class Estudiante {
         return promedio;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
