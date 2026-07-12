@@ -8,8 +8,6 @@ public class Alumno {
     private String estadoAcademico;
     private Tutor tutor;
 
-    public static final int LIMITE_INASISTENCIAS = 15;
-
     public Alumno(int dni, String nombre, String apellido, String curso, int inasistencias, String estadoAcademico) {
         this.dni = dni;
         this.nombre = nombre;
@@ -85,7 +83,7 @@ public class Alumno {
     }
 
     public boolean esLibre() {
-        return this.inasistencias > LIMITE_INASISTENCIAS;
+        return this.inasistencias > 15;
     }
 
     public void validarOperacionAcademicaEspecial() throws AlumnoLibreException {

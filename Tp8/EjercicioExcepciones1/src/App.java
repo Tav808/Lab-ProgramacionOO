@@ -11,6 +11,7 @@ public class App {
         argentina.setDirectorTecnico(dtArgentina);
 
         Seleccion brasil = new Seleccion("Brasil", "America", 10, 9, true);
+        Seleccion paraguay = new Seleccion("Paraguay", "America", 8, 30, false);
 
         mundial.agregarSeleccion(argentina);
         mundial.agregarSeleccion(brasil);
@@ -27,7 +28,7 @@ public class App {
         mundial.consultarDirectorTecnico(1);
 
         try {
-            brasil.validarJugadoresConvocados();
+            paraguay.validarJugadoresConvocados();
 
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
